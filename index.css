@@ -1,0 +1,924 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 6700px;
+    background-color: #fbfbfb;
+}
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #1f242d;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: right;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+    display:inline-block;
+    text-align: center;
+    padding-top: 18px;
+    transition: all;
+    transition-duration: .3s;
+    animation: slideTop .5s ease ;
+    animation-delay:calc(0.1s * var(--i));
+}
+
+.nav ul li a:hover {
+    color: aqua;
+    text-shadow: 5px 10px 20px aqua;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+}
+.bggimg{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+.bggimg2{
+    width: 500px;
+    position: absolute;
+    top: 60px;
+    left: 750px;
+}
+.htext1{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 180px;
+    left: 170px;
+    animation: slideBottom 1s ease forwards;
+}
+.htext2{
+    color: white;
+    font-size: 56px;
+    position: absolute;
+    top: 230px;
+    left: 170px;
+    animation: slideLeft 1s ease forwards;
+}
+.htext3{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 310px;
+    left: 170px;
+    animation: slideTop 1s ease forwards;
+}
+.htext3 span{
+    color: aqua;
+}
+.media{
+    position: absolute;
+    top: 390px;
+    left: 150px;
+}
+.media a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    animation: slideRight 1s ease;
+    animation-delay: 0.2s;
+}
+.media a:hover{
+    color: #66fcf1;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 450px;
+    left: 170px;
+    transition: all 0.3s ;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+
+}
+.btn:hover{
+    transition: all 0.3s ;
+    border-radius: 70px;
+    box-shadow: 5px 10px 20px aqua;
+}
+/*   aboutsection   */
+
+.aboutsection{
+    width: 100%;
+    height: 900px;
+    background-color: black;
+    position: relative;
+}
+.abtext{
+    color: #66fcf1;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 40px;
+    text-align: center;
+    animation:slideBottom1 1s ease ;
+    animation-delay: 1s;
+}
+.abtext2{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    left: 500px;   
+}
+.jj55{
+    color: #66fcf1;
+}
+.abparra{
+    font-size: 18px;
+    color: #66fcf1;
+    position: absolute;
+    top: 220px;
+    left: 500px;
+}
+.btn1{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #66fcf1;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 520px;
+    left: 50px;
+    transition: all 0.2s ease-out;
+}
+.btn1:hover{
+    background-color: #66fcf1;
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #66fcf1;
+    position: absolute;
+    top: 160px;
+    left: 450px;
+}
+.line{
+    width: 2px;
+    height: 580px;
+    background-color: #66fcf1;
+    position: absolute;
+    top: 170px;
+    left: 457px;
+}
+.intr{
+    color: #66fcf1;
+    font-size: 20px;
+    position: absolute;
+    top: 155px;
+    left: 330px;
+}
+.circle2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #66fcf1;
+    position: absolute;
+    top: 565px;
+    left: 450px;
+}
+.edu{
+    color: #66fcf1;
+    font-size: 20px;
+    position: absolute;
+    top: 560px;
+    left: 350px;
+}
+.list{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 560px;
+    left: 500px;
+}
+.circle3{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #66fcf1;
+    position: absolute;
+    top: 740px;
+    left: 450px;   
+}
+.work{
+    color: #66fcf1;
+    font-size: 20px;
+    position: absolute;
+    top: 735px;
+    left: 290px;
+}
+.list2{
+    font-size: 18px;
+    color: #66fcf1;
+    position: absolute;
+    top: 735px;
+    left: 500px;
+}
+
+/*    skills section     */
+.skills_section{
+    width: 100%;
+    height: 500px;
+    background-color:#1f242d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    font-size: 25px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: aqua;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 60%;
+    height: 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-left: 120px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #66fcf1;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 80%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 2s;
+}
+
+/*      work section      */
+.worksection1{
+    width: 100%;
+    height: 3500px;
+    background-color: black;
+    position: relative;
+}
+.wotext1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+.wotext2{
+    color: rgb(16, 16, 16);
+    font-size: 80px;
+    padding-top: 40px;
+}
+.woimg1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg1:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg2{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 525px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg2:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg3{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 950px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg3:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg4{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg4:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg5{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 650px;
+    left: 525px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg5:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg6{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 650px;
+    left: 950px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg6:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg7{
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    top: 1050px;
+    left: 200px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg7:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+.woimg8{
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    top: 1050px;
+    left: 750px;
+    transition: all 0.3s ease;
+    overflow: hidden;  
+}
+.woimg8:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    cursor: pointer;
+}
+
+.wetext1{
+    color: #1f242d;
+    font-size: 80px;
+    position: absolute;
+    top: 1770px;
+}
+.wwimg1{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 1900px;
+    left: 190px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.wwimg1:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    opacity: 1;
+}
+.wwtext1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 2000px;
+    left: 40px;
+}
+.wwimg2{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 2300px;
+    left: 730px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.wwimg2:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    opacity: 1;
+}
+.wwtext2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 2350px;
+    left: 660px;
+}
+.wwimg3{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 2700px;
+    left: 190px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.wwimg3:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    opacity: 1;
+}
+.wwtext3{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 2750px;
+    left: 50px;   
+}
+.wwimg4{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 3100px;
+    left: 730px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    opacity: 0.7;
+}
+.wwimg4:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px aqua;
+    opacity: 1;
+}
+.wwtext4{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 3170px;
+    left: 680px;
+}
+/*service*/
+
+.servicesection{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    position: relative;
+}
+.ser1{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+.sertext1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 550px;
+}
+.servicebox1{
+    width: 350px;
+    height: 350px;
+    background-color: #1f242d;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
+.servicebox2{
+    width: 350px;
+    height: 350px;
+    background-color: #1f242d;
+    position: absolute;
+    top: 110px;
+    left: 500px;
+}
+.servicebox3{
+    width: 350px;
+    height: 350px;
+    background-color: #1f242d;
+    position: absolute;
+    top: 110px;
+    left: 900px;
+}
+.bx-code-alt{
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.serparra1{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.bxs-paint{
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.serparra2{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.bx-bar-chart-alt{
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.serparra3{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.serbtn1{
+    width: 120px;
+    height: 40px;
+    background-color: #66fcf1;
+    border: none;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 290px;
+    left: 105px;
+    transition: all 0.3s ease;
+}
+.serbtn2{
+    width: 120px;
+    height: 40px;
+    background-color: #66fcf1;
+    border: none;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 290px;
+    left: 105px;
+    transition: all 0.3s ease;
+}
+.serbtn3{
+    width: 120px;
+    height: 40px;
+    background-color: #66fcf1;
+    border: none;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 290px;
+    left: 105px;
+    transition: all 0.3s ease;
+}
+.serbtn1:hover,.serbtn2:hover,.serbtn3:hover{
+    background-color: #00ffee;
+    box-shadow: 5px 10px 20px aqua;
+}
+.serser1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 3px;
+}
+.serser2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 3px;
+}
+.serser3{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 3px;
+}
+/*   contactsection   */
+.contactsection{
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    position: relative;
+}
+.conbanner{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+}
+.context1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    left: 550px;
+}
+.context2{
+    color: aqua;
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 670px;
+}
+.conbox1{
+    width: 600px;
+    height: 350px;
+    background-color:transparent;
+    position: absolute;
+    top: 170px;
+    left: 400px;
+}
+.inputname{
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin:20px 100px;
+}
+.inputemail{
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin:0px 100px;
+}
+.inputno{
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin:20px 100px;
+}
+.textareaa{
+    width: 400px;
+    height: 90px;
+    background-color: white;
+    border: none;
+    margin:0px 100px;
+}
+.subbtn{
+    width: 150px;
+    height: 40px;
+    background-color: #66fcf1;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin: 0px 100px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.subbtn:hover{
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 5px 10px 20px aqua;
+    color: aqua;
+}
+/*     footer       */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+.fooimg{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+}
+.copyr{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 70%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .express{
+    width: 65%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 60%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+/*animation*/
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom1 {
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
